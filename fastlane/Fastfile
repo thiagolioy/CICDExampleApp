@@ -28,19 +28,33 @@ platform :ios do
 
   desc "Push a new beta build to TestFlight"
   lane :beta do
+    scan
     match(
-      type: "appstore"
+      type: "appstore",
+      readonly: true
     )
     gym(
       scheme: "CICDExample"
     )
-    # testflight(
-    #   skip_submission: true
-    # )
+    testflight(
+      skip_submission: true,
+      skip_waiting_for_build_processing: true
+    )
+    slack(
+      message: "Upload to testflight!",
+      channel: "#cicd_ada_example",
+      slack_url: "https://hooks.slack.com/services/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"
+    )
   end
 
   desc "Run tests and generate code coverage"
   lane :test do 
     scan
+    slack(
+      message: "Tests succeeded!",
+      channel: "#cicd_ada_example",
+      slack_url: "https://hooks.slack.com/services/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"
+    )
+
   end
 end
