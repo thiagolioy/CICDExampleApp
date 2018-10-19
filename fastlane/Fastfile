@@ -33,6 +33,7 @@ platform :ios do
       type: "appstore",
       readonly: true
     )
+    increment_build_number
     gym(
       scheme: "CICDExample"
     )
