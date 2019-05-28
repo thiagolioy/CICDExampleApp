@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHL-oH-Wu1">
-                                <rect key="frame" x="40" y="597" width="295" height="30"/>
+                                <rect key="frame" x="40" y="603" width="295" height="44"/>
                                 <color key="backgroundColor" red="1" green="0.40215830660000002" blue="0.4545911748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Fw5-Ci-0Hg"/>
+                                    <constraint firstAttribute="height" constant="44" id="Fw5-Ci-0Hg"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
@@ -31,7 +31,7 @@
                         <constraints>
                             <constraint firstItem="cHL-oH-Wu1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="QEn-eJ-JGz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cHL-oH-Wu1" secondAttribute="trailing" constant="40" id="SFC-9B-uzY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cHL-oH-Wu1" secondAttribute="bottom" constant="40" id="jvx-16-zEp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cHL-oH-Wu1" secondAttribute="bottom" constant="20" id="jvx-16-zEp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
