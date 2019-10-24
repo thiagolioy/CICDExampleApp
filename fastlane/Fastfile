@@ -44,7 +44,7 @@ platform :ios do
     slack(
       message: "Upload to testflight!",
       channel: "#cicd_ada_example",
-      slack_url: "https://hooks.slack.com/services/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"
+      slack_url: "https://hooks.slack.com/services/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"
     )
   end
 
@@ -54,7 +54,7 @@ platform :ios do
     slack(
       message: "Tests succeeded!",
       channel: "#cicd_ada_example",
-      slack_url: "https://hooks.slack.com/services/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"
+      slack_url: "https://hooks.slack.com/services/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"
     )
 
   end
